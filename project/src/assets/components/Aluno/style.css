@@ -1,0 +1,11 @@
+.aluno h2 {
+
+    color: rgb(255, 166, 0);
+    margin: 10px 0;
+}
+
+.aluno p {
+
+    color: blueviolet;
+    margin: 10px 0;
+}

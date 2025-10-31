@@ -1,0 +1,12 @@
+.message h1 {
+
+    color: rgb(255, 166, 0);
+    margin: 10px 0;
+}
+
+.message p {
+    color: blueviolet;
+    margin: 10px 0;
+    font-size: 18px ;
+
+}
