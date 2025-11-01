@@ -1,0 +1,80 @@
+.add_aluno {
+  background-color: rgba(0,0,0,0.6); /* fundo semi-transparente */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  width: 350px; /* largura do container interno */
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  min-height: 90vh;       /* altura da tela inteira */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 15px; /* fundo bonito */
+}
+
+
+.add_aluno h2 {
+    color: white;
+}
+.add_aluno h3 {
+    color: white ;
+}
+.add_aluno hr {
+  border: none;
+  height: 2px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.add_aluno ol {
+  border: 2px solid white;   /* cor e espessura da borda */
+  border-radius: 8px;        /* cantos arredondados */
+  padding: 10px;             /* espaço interno */
+  width: 300px;              /* largura opcional */
+  margin-top: 15px;          /* espaço acima */
+  list-style: none;   
+  text-align: center;
+   margin: 20px auto;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+   
+}
+
+.add_aluno .button {
+  display: block;
+  margin: 25px auto;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #667eea; /* cor do botão */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* animação suave */
+}
+
+/* efeito hover */
+.add_aluno .button:hover {
+  background-color: #764ba2; /* muda a cor ao passar o mouse */
+  transform: scale(1.05);    /* aumenta levemente o botão */
+}
+
+
+
+.add_aluno .input_name,
+.add_aluno .input_email {
+  display: block;       /* força cada input em uma linha */
+  width: 300px;         /* largura opcional */
+  margin: 20px auto;    /* centraliza horizontalmente e dá espaço */
+  padding: 20px;         /* espaço interno */
+  text-align: center;   /* centraliza o texto dentro do input */
+  border-radius: 40px;   /* cantos arredondados */
+  border: 5px solid #e0e0e0;
+}
+
+
