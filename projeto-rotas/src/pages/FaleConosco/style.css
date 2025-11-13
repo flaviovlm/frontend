@@ -1,0 +1,88 @@
+.contato {
+  padding: 6rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contato h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.028em;
+  background: linear-gradient(135deg, var(--branco) 0%, var(--cinza-texto) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contato > p {
+  font-size: 1.3rem;
+  color: var(--cinza-texto);
+  margin-bottom: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.campo span {
+  color: var(--branco);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.campo input,
+.campo textarea {
+  background-color: var(--preto-card);
+  border: 1px solid var(--preto-borda);
+  border-radius: 12px;
+  padding: 1rem;
+  color: var(--branco);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--verde-apple);
+}
+
+.campo textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form button {
+  background-color: var(--verde-apple);
+  color: var(--preto-profundo);
+  border: none;
+  padding: 1.2rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.form button:hover {
+  background-color: var(--verde-hover);
+  transform: translateY(-2px);
+}

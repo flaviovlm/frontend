@@ -1,0 +1,136 @@
+.home {
+  padding: 0;
+}
+
+/* Hero Section */
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.028em;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--branco) 0%, var(--cinza-texto) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo p {
+  font-size: 1.4rem;
+  color: var(--cinza-texto);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.logo a {
+  background-color: var(--verde-apple);
+  color: var(--preto-profundo);
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.logo a:hover {
+  background-color: var(--verde-hover);
+  transform: translateY(-2px);
+}
+
+.logo img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  justify-self: center;
+}
+
+/* Por que nos escolher */
+.home > section:nth-child(2) {
+  background-color: var(--preto-card);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.home > section:nth-child(2) h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  letter-spacing: -0.022em;
+}
+
+.home > section:nth-child(2) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--preto-profundo);
+  border: 1px solid var(--preto-borda);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--verde-apple);
+}
+
+.card h3 {
+  color: var(--branco);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: var(--cinza-texto);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Equipe Section */
+.home > section:nth-child(3) {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home > section:nth-child(3) > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.home > section:nth-child(3) h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.022em;
+}
+
+.home > section:nth-child(3) p {
+  font-size: 1.2rem;
+  color: var(--cinza-texto);
+  line-height: 1.6;
+}
+
+.home > section:nth-child(3) img {
+  width: 100%;
+  border-radius: 20px;
+}

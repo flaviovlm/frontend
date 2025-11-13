@@ -1,0 +1,114 @@
+/* ===== RESET & VARIÁVEIS ===== */
+:root {
+  --preto-profundo: #000000;
+  --preto-card: #111113;
+  --preto-borda: #1d1d1f;
+  --cinza-escuro: #2c2c2e;
+  --cinza-texto: #8a8a8e;
+  --branco: #ffffff;
+  --verde-apple: #32D74B;
+  --verde-hover: #30C945;
+  --verde-ativo: #2DB540;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--preto-profundo);
+  color: var(--branco);
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+    height: 56px;
+  }
+  
+  .nav {
+    gap: 1.5rem;
+  }
+  
+  .logo {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  
+  .logo p {
+    font-size: 1.2rem;
+  }
+  
+  .home > section:nth-child(3) > div {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .section,
+  .contato {
+    padding: 4rem 1rem;
+  }
+  
+  .section h1,
+  .contato h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header a span {
+    display: none;
+  }
+  
+  .nav a {
+    font-size: 0.9rem;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+  }
+  
+  .home > section:nth-child(2) h2,
+  .home > section:nth-child(3) h2 {
+    font-size: 2rem;
+  }
+  
+  .form > div:first-child {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== ANIMAÇÕES SUAVES ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .card,
+  .logo a,
+  .form button {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+/* ===== ESTADOS DE FOCUS VISÍVEL ===== */
+.nav a:focus-visible,
+.logo a:focus-visible,
+.form button:focus-visible,
+.campo input:focus-visible,
+.campo textarea:focus-visible {
+  outline: 2px solid var(--verde-apple);
+  outline-offset: 2px;
+}
